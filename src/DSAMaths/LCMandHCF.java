@@ -10,6 +10,10 @@ public class LCMandHCF {
 
     public static int lcm(int a, int b) {
         int lcm = (a > b) ? a : b;
+       /*
+        optimized solution
+        int res = (a*b)/gcd(a,b);
+                */
         while(true){
             if(lcm % a == 0 && lcm % b == 0){
                 break;
